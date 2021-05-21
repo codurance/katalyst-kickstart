@@ -24,7 +24,7 @@ public class MockitoShould {
     public void mockInstanceMethods() {
 
         MockedClass mockedObject = mock(MockedClass.class);
-        when(mockedObject.returnFalse()).thenReturn(true);
+        when(mockedObject.returnFalse()).thenReturn(false);
 
         assertFalse(mockedObject.returnFalse());
     }
