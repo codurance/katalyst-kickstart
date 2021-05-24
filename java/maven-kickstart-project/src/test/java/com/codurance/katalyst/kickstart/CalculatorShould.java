@@ -14,6 +14,9 @@ public class CalculatorShould {
         calculator = new Calculator();
     }
 
+    /**
+     * This method demonstrates a very basic unit test
+     */
     @Test
     public void returnSumOfNumbers() {
         assertEquals(6, calculator.sum(4, 2));
