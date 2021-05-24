@@ -8,7 +8,9 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
+
 
 
 @RunWith(Parameterized.class)
@@ -56,5 +58,15 @@ public class CalculatorShould {
     public void returnSumOfNumbersParametrized() {
         assertEquals(this.expectedResult, calculator.sum(this.num1, this.num2));
     }
+
+    /**
+     * This method demonstrates assertJ fluent assertions
+     * More info here: https://assertj.github.io/doc/#assertj-core-quick-start
+     */
+    @Test
+    public void returnSumOfNumbersAssertJ() {
+        assertThat(calculator.sum(2, 3)).isEqualTo(5);
+    }
+
 
 }
