@@ -4,7 +4,7 @@ namespace Calculator
 {
     public class SimpleCalculator
     {
-        public int Add(params int[] numbers)
+        public int Sum(params int[] numbers)
         {
             int result = 0;
             foreach (var num in numbers)

@@ -4,14 +4,34 @@ namespace Calculator.Tests
 {
     public class SimpleCalculatorTests
     {
-        [Test]
-        public void Calculator_can_add_two_numbers()
+        private SimpleCalculator calculator;
+
+        [SetUp]
+        public void SetUp()
         {
-            var simpleCalculator = new SimpleCalculator();
+            calculator = new SimpleCalculator();
+        }
 
-            var result = simpleCalculator.Add(1, 1);
+        /**
+         * This method demonstrates a very basic unit test
+         */
+        [Test]
+        public void Calculator_should_add_simple_numbers()
+        {
+            Assert.AreEqual(6, calculator.Sum(4, 2));
+        }
 
-            Assert.AreEqual(result, 2);
+        /**
+         * This method demonstrates a parametrized test case
+         */
+        [Test]
+        [TestCase(1, 1, 2)]
+        [TestCase(2, 2, 4)]
+        [TestCase(3, 3, 6)]
+        [TestCase(4, 4, 8)]
+        public void Calculator_should_add_simple_numbers_parameterised(int num1, int num2, int result)
+        {
+            Assert.AreEqual(result, calculator.Sum(num1, num2));
         }
     }
 }
