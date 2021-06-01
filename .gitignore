@@ -25,3 +25,13 @@ hs_err_pid*
 # .NET files
 bin/
 obj/
+
+# IDEs
+.idea/
+
+# Java
+target/
+
+# Gradle
+build/
+.gradle/
