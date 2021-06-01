@@ -28,3 +28,9 @@ hs_err_pid*
 # Java
 target/
 
+# Gradle
+build/
+.gradle/
+
+
+
