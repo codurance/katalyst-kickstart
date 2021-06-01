@@ -28,6 +28,7 @@ obj/
 
 # IDEs
 .idea/
+*.iml
 
 # Java
 target/
