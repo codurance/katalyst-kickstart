@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'idea'
+}
+
+
+sourceSets {
+    test {
+        java.srcDir file('src/test/java/')
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation(
+              platform('org.junit:junit-bom:5.7.2'),
+              'org.junit.jupiter:junit-jupiter',
+              'org.assertj:assertj-core:3.19.0',
+              'org.mockito:mockito-junit-jupiter:3.3.3'
+    )
+}
+
+test {
+    useJUnitPlatform()
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    reports {
+        html.enabled = true
+    }
+}
