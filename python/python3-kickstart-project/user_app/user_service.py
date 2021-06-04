@@ -1,19 +1,3 @@
-# public class UserService {
-#
-#     private UserRepository userRepository;
-#
-#     public int createNewUser(User newUser) throws DuplicateUserException {
-#         if (userRepository.getUser(newUser.getUserName()) != null) {
-#             throw new DuplicateUserException("User with name " + newUser.getUserName() + " is already registered");
-#         }
-#
-#         return userRepository.add(newUser);
-#     }
-#
-#     public void setUserRepository(UserRepository userRepository) {
-#         this.userRepository = userRepository;
-#     }
-# }
 from model.user import User
 from repository.user_repository import UserRepository
 

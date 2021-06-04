@@ -1,14 +1,3 @@
-
-# public void addNewUser() throws DuplicateUserException {
-# final int expectedId = 1;
-# when(mockedUserRepository.getUser(testUser.getUserName())).thenReturn(null);
-# when(mockedUserRepository.add(testUser)).thenReturn(expectedId);
-#
-# final int actualId = userService.createNewUser(testUser);
-#
-# assertEquals(expectedId, actualId);
-# verify(mockedUserRepository, times(1)).add(testUser);
-# }
 import unittest
 from unittest.mock import Mock
 
