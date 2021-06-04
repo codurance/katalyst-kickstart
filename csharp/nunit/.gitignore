@@ -36,3 +36,9 @@ target/
 # Gradle
 build/
 .gradle/
+
+# Python
+.env/
+.pytest_cache/
+__pycache__/
+
