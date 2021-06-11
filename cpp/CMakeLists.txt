@@ -22,8 +22,13 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+file(GLOB katalyst_src "*.h" "*.cpp")
+
 # we need to add our tests here, they can be aggregated by context if required
-add_executable(ServiceTests UserServiceTests.cpp)
+add_executable(
+  ServiceTests
+  ${katalyst_src}
+)
 target_link_libraries(ServiceTests gtest_main)
 
 include(GoogleTest)
