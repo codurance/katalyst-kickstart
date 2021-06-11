@@ -59,8 +59,8 @@ BasedOnStyle: Microsoft
 # CommentPragmas: "^ IWYU pragma:"
 # CompactNamespaces: false
 # ConstructorInitializerAllOnOneLineOrOnePerLine: false
-# ConstructorInitializerIndentWidth: 4
-# ContinuationIndentWidth: 4
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
 # Cpp11BracedListStyle: true
 # DeriveLineEnding: true
 # DerivePointerAlignment: false
@@ -91,14 +91,14 @@ BasedOnStyle: Microsoft
 # BitFieldColonSpacing: Both
 # IncludeIsMainRegex: "(Test)?$"
 # IncludeIsMainSourceRegex: ""
-# IndentCaseBlocks: false
-# IndentCaseLabels: false
-# IndentExternBlock: AfterExternBlock
-# IndentGotoLabels: true
-# IndentPPDirectives: None
-# IndentRequires: false
-# IndentWidth: 2
-# IndentWrappedFunctionNames: false
+IndentCaseBlocks: true
+IndentCaseLabels: true
+IndentExternBlock: AfterExternBlock
+IndentGotoLabels: true
+IndentPPDirectives: None
+IndentRequires: false
+IndentWidth: 4
+IndentWrappedFunctionNames: false
 # InsertTrailingCommas: None
 # JavaScriptQuotes: Leave
 # JavaScriptWrapImports: true
@@ -106,9 +106,9 @@ BasedOnStyle: Microsoft
 # MacroBlockBegin: ""
 # MacroBlockEnd: ""
 # MaxEmptyLinesToKeep: 1
-# NamespaceIndentation: None
+NamespaceIndentation: None
 # ObjCBinPackProtocolList: Auto
-# ObjCBlockIndentWidth: 2
+ObjCBlockIndentWidth: 4
 # ObjCBreakBeforeNestedBlockParam: true
 # ObjCSpaceAfterProperty: false
 # ObjCSpaceBeforeProtocolList: true
@@ -121,7 +121,7 @@ BasedOnStyle: Microsoft
 # PenaltyExcessCharacter: 1000000
 # PenaltyIndentedWhitespace: 0
 # PenaltyReturnTypeOnItsOwnLine: 60
-# PointerAlignment: Right
+PointerAlignment: Left
 # ReflowComments: true
 # SortIncludes: true
 # SortJavaStaticImport: Before
@@ -152,7 +152,7 @@ BasedOnStyle: Microsoft
 #   - Q_UNUSED
 #   - QT_REQUIRE_VERSION
 # UseCRLF: false
-# UseTab: Never
+UseTab: Never
 # WhitespaceSensitiveMacros:
 #   - STRINGIZE
 #   - PP_STRINGIZE
