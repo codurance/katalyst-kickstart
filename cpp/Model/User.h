@@ -8,26 +8,17 @@ using namespace std;
 class User
 {
   private:
-    string _username;
-    string _password;
+    string m_username;
+    string m_password;
 
   public:
-    string GetUserName()
-    {
-        return _username;
-    };
-    void SetUserName(string userName)
-    {
-        _username = userName;
-    };
-    string GetPassword()
-    {
-        return _password;
-    };
-    void SetPassword(string password)
-    {
-        _password = password;
-    };
+    User();
+    User(string username, string password);
+    ~User();
+    string GetUsername();
+    void SetUsername(string username);
+    string GetPassword();
+    void SetPassword(string password);
 };
 
 #endif

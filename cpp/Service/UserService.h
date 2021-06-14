@@ -1,27 +1,20 @@
-#include <User.h>
-#include <UserRepository.h>
+#ifndef USER_SERVICE_H
+#define USER_SERVICE_H
+
+#include "../Model/User.h"
+#include "../Repository/UserRepository.h"
+#include <iostream>
 
 using namespace std;
 
 class UserService
 {
   private:
-    UserRepository userRepository;
+    UserRepository* m_repository;
 
   public:
-    int CreateNewUser(User newUser)
-    {
-        User* existingUser = userRepository.GetUser(newUser.GetUserName());
-        if (existingUser != NULL)
-        {
-            throw;
-        }
-
-        return userRepository.Add(newUser);
-    }
-
-    void SetUserRepository(UserRepository userRepository)
-    {
-        this->userRepository = userRepository;
-    }
+    int CreateNewUser(User newUser);
+    void SetUserRepository(UserRepository* userRepository);
 };
+
+#endif
