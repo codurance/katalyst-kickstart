@@ -1,19 +1,10 @@
 cmake_minimum_required(VERSION 3.20.3)
 
-project(katalyst VERSION 0.0.1)
+project(Katalyst VERSION 0.1.0)
 
-set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-enable_testing()
-
-include_directories(.)
-include_directories(Model)
-include_directories(Repository)
-include_directories(Service)
-
-# now to include the Google test framework
 include(FetchContent)
 FetchContent_Declare(
   googletest
@@ -22,14 +13,20 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-file(GLOB katalyst_src "*.h" "*.cpp")
+enable_testing()
 
-# we need to add our tests here, they can be aggregated by context if required
-add_executable(
-  ServiceTests
-  ${katalyst_src}
+set(
+  SOURCES
+  Model/User.cpp
+  Model/User.h
+  Repository/UserRepository.h
+  # Service/UserService.cpp
+  Service/UserService.h
+  main.cpp
 )
-target_link_libraries(ServiceTests gtest_main)
+
+add_executable(ServiceTests "${SOURCES}")
+target_link_libraries(ServiceTests gtest_main gmock_main)
 
 include(GoogleTest)
 gtest_discover_tests(ServiceTests)

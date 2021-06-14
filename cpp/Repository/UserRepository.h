@@ -1,13 +1,16 @@
-#ifndef REPO_USER_REPOSITORY_H_
-#define REPO_USER_REPOSITORY_H_
+#ifndef USER_REPOSITORY_H
+#define USER_REPOSITORY_H
 
-#include <User.h>
+#include "../Model/User.h"
+#include <iostream>
+
+using namespace std;
 
 class UserRepository
 {
   public:
-    virtual User* GetUser(string& username);
-    virtual int Add(User& newUser);
+    virtual User* GetUser(string& username) = 0;
+    virtual int Add(User* newUser) = 0;
 };
 
 #endif
