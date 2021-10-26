@@ -32,7 +32,7 @@ cat README.md
 
 **Katalyst** refers to ([katalyst.codurance.com](https://katalyst.codurance.com/)), a website providing katas used for learning, teaching and practicing test-driven-development. 
 
-Obviously you can use these templates in this repo for any TDD practice. If you want some recommended places to start check out these:
+Obviously you can use the templates in this repo for any TDD practice. If you want some recommended places to start check out these:
 
 - [**FizzBuzz**](https://katalyst.codurance.com/fizzbuzz) – a perfect intro to classic TDD 
 - [**Roman Numerals**](https://katalyst.codurance.com/roman-numerals) – another classic kata for mastering TDD fundamentals
