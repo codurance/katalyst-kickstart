@@ -24,7 +24,7 @@ cat README.md
 ## or read in a browser - e.g. https://github.com/codurance/katalyst-kickstart/tree/main/csharp/nunit#readme
 ```
 
-<strong><sup>*</sup></strong> If your chosen language and set of tools is not represented feel free to [raise an issue](https://github.com/codurance/katalyst-kickstart/issues) (or submit an existing one), or [submit a pull request](https://github.com/codurance/katalyst-kickstart/pulls) with a template of your own.
+<strong><sup>*</sup></strong> If your chosen language and set of tools is not represented feel free to [raise an issue](https://github.com/codurance/katalyst-kickstart/issues) (or add to an existing one), or [submit a pull request](https://github.com/codurance/katalyst-kickstart/pulls) with a template of your own.
 
 <strong><sup>**</sup></strong> If you don't want to download the whole repository you could do a [sparse checkout](https://github.community/t/how-can-i-download-a-specific-folder-from-a-github-repo/278/2)
 
