@@ -1,8 +1,10 @@
-class User
-    attr_reader :username, :password
+# frozen_string_literal: true
 
-    def initialize(username, password)
-        @username = username
-        @password = password
-    end
+class User
+  attr_reader :username, :password
+
+  def initialize(username, password)
+    @username = username
+    @password = password
+  end
 end
