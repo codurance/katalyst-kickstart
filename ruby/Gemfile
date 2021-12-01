@@ -6,3 +6,4 @@ ruby '2.7.4'
 
 gem 'faker'
 gem 'rspec'
+gem 'rubocop'
