@@ -2,8 +2,6 @@
 
 require_relative '../model/user'
 
-class NotImplementedError < StandardError; end
-
 class UserRepository
   def self.get(username)
     raise NotImplementedError
