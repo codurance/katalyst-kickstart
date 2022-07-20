@@ -43,3 +43,5 @@ build/
 __pycache__/
 *.pyc
 
+# Node
+node_modules
