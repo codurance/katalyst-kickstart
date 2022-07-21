@@ -1,42 +1,45 @@
-# katalyst-kickstart 🚀
+# Katalyst Kickstarter 🚀
 
-The templates in this repo are designed to kickstart your TDD practice
+This repository contains a starting project in multiple languages in order for you to get started with your TDD learning
+or practicing. If you see a language missing that you would like us to add
+please [raise an issue](https://github.com/codurance/katalyst-kickstart/issues), and we will happily add it (or just
+raise a [pull request](https://github.com/codurance/katalyst-kickstart/pulls) with the desired template).
 
 ## What's in the templates?
-
 
 - A "blank" project to get you up and running quickly 💨
 - Test runner setup and example tests 👩🏽‍💻
 
 ### How to use the templates
 
-1. Find the directory for your chosen language and set of tools <strong><sup>*</sup></strong>
-1. Clone this repo and change into that directory <strong><sup>**</sup></strong>
-1. Follow the instructions in the README for that directory
+This repository can get quite large, and pulling down all the starters is not ideal. If you don't want to `git clone`
+the whole project you can follow the following steps:
 
-For example, to use the C# with NUnit scaffold:
-
-```
-git clone git@github.com:codurance/katalyst-kickstart.git
-cd katalyst-kickstart 
-cd csharp/nunit
-cat README.md 
-## or read in a browser - e.g. https://github.com/codurance/katalyst-kickstart/tree/main/csharp/nunit#readme
-```
-
-<strong><sup>*</sup></strong> If your chosen language and set of tools is not represented feel free to [raise an issue](https://github.com/codurance/katalyst-kickstart/issues) (or add to an existing one), or [submit a pull request](https://github.com/codurance/katalyst-kickstart/pulls) with a template of your own.
-
-<strong><sup>**</sup></strong> If you don't want to download the whole repository you could do a [sparse checkout](https://github.community/t/how-can-i-download-a-specific-folder-from-a-github-repo/278/2)
+1. Run a filtered clone that pulls nothing that you are not using:
+    ```
+   git clone \
+    --depth 1 \
+    --filter=blob:none \
+    --sparse \
+    git@github.com:codurance/katalyst-kickstart.git
+   ```
+2. Once you've cloned the repo go into it by `cd katalyst-kickstart`.
+3. To pull the starter of your desired language simply run `git sparse-checkout set <directory>`. eg: if I want to
+   download the C# starter I would run `git sparse-checkout set csharp` as `csharp` is the name of the directory.
+4. Once you've done this, you can go into the directory and start crafting ⚒️
 
 ## Looking for a good kata? 🥋
 
-**Katalyst** refers to [katalyst.codurance.com](https://katalyst.codurance.com/), a website providing katas for learning, teaching and practicing test-driven-development. 
+**Katalyst** refers to [katalyst.codurance.com](https://katalyst.codurance.com/), a website providing katas for
+learning, teaching and practicing test-driven-development.
 
 Obviously you can use the templates in this repo for any TDD practice. If you want some recommendations check out these:
 
-- [**FizzBuzz**](https://katalyst.codurance.com/fizzbuzz) – a perfect intro to classic TDD 
-- [**Roman Numerals**](https://katalyst.codurance.com/roman-numerals) – another classic kata for mastering TDD fundamentals
-- [**Gilded Rose**](https://katalyst.codurance.com/gilded-rose) – designed to practice introducing tests and features to legacy code
+- [**FizzBuzz**](https://katalyst.codurance.com/fizzbuzz) – a perfect intro to classic TDD
+- [**Roman Numerals**](https://katalyst.codurance.com/roman-numerals) – another classic kata for mastering TDD
+  fundamentals
+- [**Gilded Rose**](https://katalyst.codurance.com/gilded-rose) – designed to practice introducing tests and features to
+  legacy code
 - [**Mars Rover**](https://katalyst.codurance.com/mars-rover) – a great kata to practice solving a state based problem
 - [**Bank Kata**](https://katalyst.codurance.com/bank) – often cited as the kata for practicing Outside-In TDD
 - [And more...](https://katalyst.codurance.com/browse) 
