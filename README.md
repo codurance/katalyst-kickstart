@@ -10,7 +10,7 @@ raise a [pull request](https://github.com/codurance/katalyst-kickstart/pulls) wi
 - A "blank" project to get you up and running quickly 💨
 - Test runner setup and example tests 👩🏽‍💻
 
-### How to use templates
+### How to use the templates
 
 This repository can get quite large, and pulling down all the starters is not ideal, if you don't want to `git clone`
 the whole project you can follow the following steps:
