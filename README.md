@@ -12,7 +12,7 @@ raise a [pull request](https://github.com/codurance/katalyst-kickstart/pulls) wi
 
 ### How to use the templates
 
-This repository can get quite large, and pulling down all the starters is not ideal, if you don't want to `git clone`
+This repository can get quite large, and pulling down all the starters is not ideal. If you don't want to `git clone`
 the whole project you can follow the following steps:
 
 1. Run a filtered clone that pulls nothing that you are not using:
