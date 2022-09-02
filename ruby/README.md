@@ -11,6 +11,8 @@ You'll need to install ruby into your environment. The recommended strategy is t
 
 Dependencies in ruby are managed with the gem (package) called bundler, which comes packaged in modern ruby installs by default. If your ruby environment is sufficiently configured, you should be able to simply use the command `bundle` to install the dependencies described in the Gemfile.
 
+In case bundler is not available to you out of the box, use the command `sudo gem install bundler` to get it installed.
+
 ## Execute Tests
 
 The command `rspec`, will automatically look in the "spec" folder for test files which name ends in "\_spec" and executes them.
