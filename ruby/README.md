@@ -13,6 +13,8 @@ Dependencies in ruby are managed with the gem (package) called bundler, which co
 
 In case bundler is not available to you out of the box, use the command `sudo gem install bundler` to get it installed.
 
+If you still find yourself in trouble you can try [rvm](https://tecadmin.net/installing-ruby-on-ubuntu-debian/)
+
 ## Execute Tests
 
 The command `rspec`, will automatically look in the "spec" folder for test files which name ends in "\_spec" and executes them.
