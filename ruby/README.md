@@ -19,6 +19,8 @@ If you still find yourself in trouble you can try [rvm](https://tecadmin.net/ins
 
 The command `rspec`, will automatically look in the "spec" folder for test files which name ends in "\_spec" and executes them.
 
+If the command fails, try to install `rspec` with `gem install rspec`
+
 ## Code Quality Checks
 
 Most rubyists are familiar with Rubocop for ensuring a baseline of code quality. The command `rubocop` will identify any code quality issues, while the command `rubocop -A` will automatically fix most issues, though at the risk of potentially damaging your code, so be sure to check that it still works after the changes have been made. 
